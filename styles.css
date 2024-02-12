@@ -1,3 +1,18 @@
-p {
-    background-color: blue;
+* {
+    background-color: cyan;
+    color: black;
+}
+
+.name {
+    color: white;
+}
+
+#husky {
+    color: greenyellow;
+    background: yellow;
+}
+
+#photo {
+    width: 600px;
+    height: 400px;
 }
