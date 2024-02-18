@@ -9,10 +9,55 @@
 
 #husky {
     color: greenyellow;
-    background: yellow;
+    background: white;
 }
 
 #photo {
-    width: 600px;
-    height: 400px;
+    width: 458px;
+    height: auto;
+}
+
+#photo2 {
+  width: 360px;
+  height: auto;
+}
+
+.albm {
+  display: inline;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+@media screen and (min-width: 360px ) and (max-width: 1024px) {
+  .container { 
+    align-items: flex-start;
+    gap: 12px;
+  }  
+  #photo {
+    display: none;
+  }
+  #photo2{
+    border: 10px solid black;
+  }
+  * {
+    background: none;
+  }
+  html{ background: url(https://a-z-animals.com/media/2021/12/Siberian-Husky.jpg); 
+  }
+}
+
+
+/* NO CONTENT FOR SMALL WIDTH!!! */
+@media screen and (max-width: 360px) {
+  html { 
+    background: url(https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2021/10/19104422/Siberian-Husky-head-portrait-in-profile-outdoors.jpg);
+  }
+  .container {
+    display: none;
+  }
 }
